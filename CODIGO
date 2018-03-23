@@ -1,0 +1,10 @@
+CODIGO SAS
+
+/* eliminar último registro */
+data evol_indicadores_pred_pr;
+set libout.evol_indicadores_pred
+end=last;
+if last
+/*input(fecha_mes,mmddyy8.) = '2017/02/01'd8. */then delete;
+run;
+
